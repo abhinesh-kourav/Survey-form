@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - The night cafe : survey form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<header>
+  <h1 id="title" align="center">The Night Cafe : Survey Form</h1>
+  <p align="center" id="description">This survey is being conducted to improve our facilities and to enhance your experience at the Night Cafe</p>
+</header>
+<form id="survey-form">
+  <div>
+    <label id="name-label" for="name">1. Name</label>
+    <input type="text" id="name" placeholder="Enter your name here" required>
+  </div>
+  <div><label id="email-label" for="email">2. E-Mail</label>
+    <input type="email" id="email" placeholder="Enter your Email-ID here" required>
+  </div>
+  <div><label id="number-label" for="number">3. Age</label>
+    <input type="number" id="number" min="10" max="99" placeholder="Enter your age here">
+  </div>
+  <div><label for="dropdown">4. Which one is your favourite beverage at our cafe?</label>
+    <select id="dropdown">
+      <option disabled selected value>Your favourite beverage</option>
+      <option>Espresso</option>
+      <option>Cappuccino</option>
+      <option>Latte</option>
+      <option>Double Chocolate Mocha</option>
+      <option> Caramellow</option>
+    </select>
+  </div>
+  <div><label>5. How often do you visit the Night Cafe?</label>
+    <section class="rdosec"><label><input type="radio" class="rdo" name="visit-times" value="daily" checked />Daily</label>
+      <label><input class="rdo" type="radio" name="visit-times" value="weekly" />Weekly</label>
+      <label><input class="rdo" type="radio" name="visit-times" value="monthly" />Monthly</label>
+    </section>
+  </div>
+  <div><label>6. What are the main things that bring you to The Night Cafe?</label>
+    <section class="cbsec"> <label><input type="checkbox" class="cb" value="hiking" />Hiking</label>
+      <label><input class="cb" type="checkbox" value="dog-walk" />Dog Walking</label>
+      <label><input type="checkbox" class="cb" value="tourism" />Tourism/visiting</label>
+      <label><input class="cb" type="checkbox" value="neighbour" />Neighbour/Live Close By</label>
+      <label><input class="cb" type="checkbox" value="events" />Live Music/Trivia/ Events</label>
+      <label><input class="cb" type="checkbox" value="breakfast-lunch" />Breakfast or Lunch</label>
+      <label><input class="cb" type="checkbox" value="the-coffee" />The Coffee</label>
+    </section>
+  </div>
+  <div> <label for="comments">7. Do you have any other Comments or Suggestions for us?</label>
+    <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+  </div>
+  <button type="submit" id="submit">SUBMIT</button>
+
+</form>
+<!-- partial -->
+  
+</body>
+</html>
